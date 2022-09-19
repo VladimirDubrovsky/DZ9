@@ -1,0 +1,18 @@
+
+//  Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+Console.Write("Введи M: ");
+int N = Convert.ToInt16(Console.ReadLine());
+Console.Write("Введи N: ");
+int M = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine($"N={N}, M={M}");
+int summ = 0;
+
+if (M > N)
+    for (int i = N; i <= M; i++)
+    { summ = summ + i; }
+else
+    for (int i = M; i <= N; i++)
+    { summ = summ + i; }
+
+Console.Write($" {summ}");  
